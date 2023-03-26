@@ -3,7 +3,7 @@
 To create this pipeline first of all we need a couple of packages to be installed which are mentioned in the requirements.txt
 
 Jenkins can be installed at using 'brew install jenkins' or 'brew install jenkins-lts'.
-Docker can be installed from https://docs.docker.com/desktop/install/mac-install/
+Docker can be installed from https://docs.docker.com/desktop/install/windows-install/ or https://docs.docker.com/desktop/install/mac-install/
 
 Start the jenkins using 'brew services start jenkins-lts'
 
