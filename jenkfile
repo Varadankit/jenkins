@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    //environment {
+        
+    //}
+    stages {
+        stage('Build'){
+            steps {
+                sh 'git pull https://github.com/varadankit/jenkins.git'
+                sh 'docker build -t jenk1:v1 .'
+            }
+        }
+        stage('Deploy'){
+            steps{
+                sh 'docker run -p 1111:1111 -itd jenk1:v1'
+            }
+        }
+    }
+}
